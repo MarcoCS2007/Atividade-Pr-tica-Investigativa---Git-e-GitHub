@@ -40,6 +40,8 @@ conceitos_git = {
 
 def alterado():
     print ("Aqui está diferente")
+def alteracao():
+    print ("Alteração Realizada")
 
 comandos_git_uso = {
     "git stash": {
