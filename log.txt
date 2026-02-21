@@ -31,3 +31,71 @@ marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Inv
 
 
 
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git add main.py
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git commit -m "Comit com mensajem errada"
+[main 252bd96] Comit com mensajem errada
+ 1 file changed, 3 insertions(+)
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git commit --amend -m "Commit com mensagem corrigida"[main 6c6a6dd] Commit com mensagem corrigida
+ Date: Sat Feb 21 10:13:53 2026 -0300
+ 1 file changed, 3 insertions(+)
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git log
+commit 6c6a6ddfbe39a8d9c2535097740e852f67e88791 (HEAD -> main)
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+Date:   Sat Feb 21 10:13:53 2026 -0300
+
+    Commit com mensagem corrigida
+
+commit 86780a48c95e876733bc275773897feb1fda250f (origin/main, origin/HEAD)
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+Date:   Sat Feb 21 09:25:25 2026 -0300
+
+    Create log.txt
+
+commit f187e879aac4a656612d63101c697d1e84ad1fdc
+Merge: ab68ca8 4236553
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+Date:   Sat Feb 21 09:21:18 2026 -0300
+
+    Resolve conflito de merge entre a branch main e feature-login no main.py
+
+commit ab68ca8a6e2f12f3f1f050a029462cda1ebdc33a
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+Date:   Sat Feb 21 09:17:32 2026 -0300
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git add .
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git commit -m "Adiciona um bug proposital no sistema"[main 194386c] Adiciona um bug proposital no sistema
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git revert HEAD --no-edit
+[main 1743ca7] Revert "Adiciona um bug proposital no sistema"
+ Date: Sat Feb 21 10:16:42 2026 -0300
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git add .
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git commit -m "Commit lixo que deve sumir da historia"
+[main 036c888] Commit lixo que deve sumir da historia
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git reset --hard HEAD~1
+HEAD is now at 1743ca7 Revert "Adiciona um bug proposital no sistema"
+marco17@marco17-IdeaPad-Slim-3-15ARP10:~/Documentos/GitHub/Atividade-Pr-tica-Investigativa---Git-e-GitHub$ git log
+commit 1743ca7d19245b0df6dfbba4fbda4aced7c678ed (HEAD -> main)
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+Date:   Sat Feb 21 10:16:42 2026 -0300
+
+    Revert "Adiciona um bug proposital no sistema"
+    
+    This reverts commit 194386c214ad0f2bd7681e1d0850fc5679566aba.
+
+commit 194386c214ad0f2bd7681e1d0850fc5679566aba
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+Date:   Sat Feb 21 10:16:25 2026 -0300
+
+    Adiciona um bug proposital no sistema
+
+commit 6c6a6ddfbe39a8d9c2535097740e852f67e88791
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+Date:   Sat Feb 21 10:13:53 2026 -0300
+
+    Commit com mensagem corrigida
+
+commit 86780a48c95e876733bc275773897feb1fda250f (origin/main, origin/HEAD)
+Author: Marco Antônio Chaves De Souza <marcoantoniocs1000@gmail.com>
+
+
