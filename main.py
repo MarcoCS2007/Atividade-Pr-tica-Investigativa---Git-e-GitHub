@@ -106,4 +106,3 @@ if __name__ == "__main__":
 """
 Mensagem errada
 """
-print('erro aqui')
