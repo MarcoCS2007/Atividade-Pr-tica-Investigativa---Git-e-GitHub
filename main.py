@@ -16,6 +16,9 @@ diferencas_git = {
     }
 }
 
+def pra_confirmar():
+    print ("Aqui está diferente mesmo")
+
 conceitos_git = {
     "HEAD": {
         "definicao": "Ponteiro de referência que indica exatamente qual commit e branch você está visualizando e editando no momento.",
@@ -34,6 +37,9 @@ conceitos_git = {
         "regra_de_ouro": "Não é um erro do sistema, mas o Git pedindo socorro humano: 'Qual destas duas edições na mesma linha eu devo manter?'."
     }
 }
+
+def alterado():
+    print ("Aqui está diferente")
 
 comandos_git_uso = {
     "git stash": {
@@ -93,3 +99,5 @@ def exibir_guia_git():
 # Executando o script
 if __name__ == "__main__":
     exibir_guia_git()
+
+    "teste"
