@@ -35,6 +35,9 @@ conceitos_git = {
     }
 }
 
+def alteracao():
+    print ("Alteração Realizada")
+
 comandos_git_uso = {
     "git stash": {
         "quando_utilizar": "Quando tem alterações não guardadas, mas precisa de mudar de branch urgentemente sem fazer um commit de código incompleto. Guarda as alterações temporariamente.",
@@ -93,3 +96,4 @@ def exibir_guia_git():
 # Executando o script
 if __name__ == "__main__":
     exibir_guia_git()
+
